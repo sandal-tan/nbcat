@@ -36,7 +36,11 @@ class CodeCell(Cell):
             Syntax(''.join(self.source), 'python', line_numbers=True, highlight_lines=False),
         )
         if self.outputs:
-            console.print(Syntax(''.join(f'>>> {loc}' for loc in self.outputs[0]['text']), 'python'))
+            console.print(
+                Rule(character='-'),
+                *self.outputs[0]['text']
+                # Syntax(''.join(f'>>> {loc}' for loc in self.outputs[0]['text']), 'python'),
+            )
         console.print(Rule())
 
 def make_cell(**cell_kwargs) -> Cell:

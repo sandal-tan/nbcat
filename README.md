@@ -4,7 +4,7 @@ Display syntax-highlighted, markdown-rendered, jupyter notebooks in your termina
 
 Built using [rich](https://github.com/willmcgugan/rich), `nbcat` is capable of displaying a rendered jupyter notebook to your terminal.
 
-[![asciicast](https://asciinema.org/a/328997.svg)](https://asciinema.org/a/328997)
+[![asciicast](https://asciinema.org/a/329000.svg)](https://asciinema.org/a/329000)
 
 ## Usage
 
@@ -29,6 +29,6 @@ This project is managed with [poetry](https://python-poetry.org/), to install th
 
 ## Future Goals
 
-[ ] Printout cell and notebook metadata
-[ ] Natively scroll-able
-[ ] Render pandas DataFrames as tables
+- [ ] Printout cell and notebook metadata
+- [ ] Natively scroll-able
+- [ ] Render pandas DataFrames as tables
