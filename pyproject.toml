@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nbcat"
+version = "0.1.0"
+description = ""
+authors = ["Ian Baldwin <ian@iantbaldw.in>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+rich = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+nbcat = 'nbcat.cli:nbcat'
